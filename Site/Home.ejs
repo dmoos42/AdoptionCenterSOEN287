@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="Adoption.css">
+    <script src="AdoptionJS.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <%- include('Header') %>
+        </div>
+    <div class="home">
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a class="active" href=/Home>Home Page</a></li>
+                    <li><a href=/FindAnimal>Find a Dog/Cat</a></li>
+                    <li><a href=/DogCare>Dog Care</a></li>
+                    <li><a href=/CatCare>Cat Care</a></li>
+                    <li><a href=/GiveAway>Have a Pet to Give Away</a></li>
+                    <li><a href=/CreateAccount>Create an Account</a></li>
+                    <li><a href=/Contact>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="home">
+            <h2>Welcome to the Animal Adoption Center</h2>
+            <p>
+               If you're looking to adopt an animal in need of a home or have an animal you want to give up for adoption, you've come to the right place! 
+                
+            </p>
+    
+            <div id="animalpics">
+                <div><a><img style="width: 150px;" id="dog" alt="dog lying down" src="https://media-be.chewy.com/wp-content/uploads/2022/09/27101923/cute-dogs-pomeranian.jpg"></a></div>
+                <div><a><img style="width: 112px;" id="cat" alt="cat looking down" src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D"></a></div>
+            </div>
+            <div>
+                <p>
+                    We have wide selection of cats and dogs of all ages!<br>
+                </p>
+                <p>
+                    Feel free to check out our Cat/Dog care sections for additional information on your new furry friends.
+                </p>
+            </div>
+        </div>
+    </div>
+        <div id="foot">
+            <%- include ('Footer') %>
+        </div>
+    </div>
+
+</body>
+</html>

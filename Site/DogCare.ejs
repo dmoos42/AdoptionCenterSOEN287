@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Care</title>
+    <link rel="stylesheet" href="Adoption.css">
+    <script src="AdoptionJS.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <%- include('Header') %>
+        </div>
+        <div class="care">
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href=/Home>Home Page</a></li>
+                    <li><a href=/FindAnimal>Find a Dog/Cat</a></li>
+                    <li><a class="active" href=/DogCare>Dog Care</a></li>
+                    <li><a href=/CatCare>Cat Care</a></li>
+                    <li><a href=/GiveAway>Have a Pet to Give Away</a></li>
+                    <li><a href=/CreateAccount>Create an Account</a></li>
+                    <li><a href=/Contact>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="dogcare">
+            <h3>How to Take Care of a Dog?</h3>
+         <p>
+            When adopting a dog for the first time, many people are unaware of the many responsibilites that come with it. 
+            However, there is no reason to worry as the ASPCA has written an amazing guide covering all the basics new dog owners need to know when embarking on this journey.</p>
+        <a title="Dog care guide" href="https://www.aspca.org/pet-care/dog-care/general-dog-care">Follow this link to access the guide!</a><br>
+        <h3>Thinking About Dog Training?</h3>
+        <p>
+            Training is also very important when adopting a dog. Thankfully, Jenna Stregowski from the Spruce Pets has written a wondeful article on how to train your dog right from home!
+        </p>
+        <a title="Dog training guide" href="https://www.thesprucepets.com/steps-to-train-your-dog-1118273">Click here to learn how to train your dog!</a>
+    </div>
+    </div>
+        <div id="foot">
+            <%- include ('Footer') %>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Give Away</title>
+    <link rel="stylesheet" href="Adoption.css">
+    <script src="AdoptionJS.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <%- include('Header') %>
+        </div>
+        <div class="forms">
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href=/Home>Home Page</a></li>
+                    <li><a href=/FindAnimal>Find a Dog/Cat</a></li>
+                    <li><a href=/DogCare>Dog Care</a></li>
+                    <li><a href=/CatCare>Cat Care</a></li>
+                    <li><a class="active" href=/GiveAway>Have a Pet to Give Away</a></li>
+                    <li><a href=/CreateAccount>Create an Account</a></li>
+                    <li><a href=/Contact>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="theForm">
+            <p id="message"><%= typeof message != "undefined" ? message : ""%></p>
+        <form id="giveAwayForm" action="/updatePets" method="post">
+            <fieldset>
+                <legend>Animal Give Away</legend>
+                    <p><b>What type of animal is it?</b>
+                    <input type="radio" id="dog" name="animal" value="Dog">
+                    <label for="dog">Dog</label>
+                    <input type="radio" id="cat" name="animal" value="Cat">
+                    <label for="cat">Cat</label>
+                    </p>
+                    <p><b>What is the breed of the animal? (Place a "/" between breeds if it is mixed)</b>
+                        <input id="breed" name="breed">
+                    </p>
+                    <p><b>How many years old is the animal?</b>
+                        <select id="age" name="age">
+                            <option></option>
+                            <option value="0-2">0 - 2</option>
+                            <option value="2-4">2 - 4</option>
+                            <option value="4-6">4 - 6</option>
+                            <option value="6-8">6 - 8</option>
+                            <option value="8+">8+</option>
+                        </select>
+                    </p>
+                    <p><b>What is the gender of the animal?</b>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </p>
+                    <p>
+                        <b>Does it get along with other animals?</b>
+                        <input type="radio" id="dogs" name="getalong" value="Dogs">
+                        <label for="dogs">Dogs</label>
+                        <input type="radio" id="cats" name="getalong" value="Cats">
+                        <label for="cats">Cats</label>
+                        <input type="radio" id="both" name="getalong" value="Both">
+                        <label for="both">Both</label>
+                        <input type="radio" id="neither" name="getalong" value="Neither">
+                        <label for="neither">Neither</label>
+                    </p>
+                    <p><b>Is it suitable for a family with young children?</b>
+                        <input type="radio" id="yes" name="children" value="Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="children" value="No">
+                        <label for="no">No</label>
+                    </p>
+                    <p><b>Please enter a quick description of the animal to entice potential adopters:</b></p>
+                    <textarea id="description" name="description">
+                    </textarea>
+                    <p><b>Please enter your full name:</b>
+                        <input id="name" name="name">
+                    </p>
+                    <p><b>Please enter an email where you can be reached:</b> 
+                        <input type="email" id="email" name="email">
+                    </p>
+                    <button type="submit" value="submit">Submit</button>
+                    <input type="reset" value="Clear">
+                    <p id="error" style="color: red"></p>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+        <div id="foot">
+            <%- include ('Footer') %>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

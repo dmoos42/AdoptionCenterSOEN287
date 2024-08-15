@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#logo{
+    width: 70px;
+    padding: 5px;
+}
+#head{
+    background-color: aqua;
+}
+#time{
+    padding-right: 5px;
+}
+#head header{
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#foot{
+    background-color: aqua;
+    height: 100vh;
+}
+#foot footer{
+    width: 100%;
+    justify-content:center;
+    text-align: center;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(252, 100%, 64%);
+    color: white;
+    width: 130px;
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+}
+
+li a:hover{
+    background-color: black;
+}
+li a.active{
+    background-color: rgb(110, 207, 249);
+    color: white;
+}
+.forms{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+
+#theForm{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.care{
+    display: flex;
+    gap: 10px;
+}
+
+.home{
+    display:flex;
+    gap:10px;
+}
+#home > h2{
+    text-align: center;
+}
+#animalpics{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#home{
+    flex-shrink: 7;
+    margin-left: auto;
+    margin-right: auto;
+}
+#dogcare{
+    flex-shrink: 7;
+}
+.browse{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#browse{
+    display: inline-flex;
+    gap: 30px;
+    margin: auto;
+    
+}
+
+#browse > div{
+   border: 1px solid black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px;
+}
+
+.browsepics{
+    width: 80px;
+}
+
+#privacyNlougout{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Care</title>
+    <link rel="stylesheet" href="Adoption.css">
+    <script src="AdoptionJS.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <%- include('Header') %>
+        </div>
+        <div class="care">
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href=/Home>Home Page</a></li>
+                    <li><a href=/FindAnimal>Find a Dog/Cat</a></li>
+                    <li><a href=/DogCare>Dog Care</a></li>
+                    <li><a class="active" href=/CatCare>Cat Care</a></li>
+                    <li><a href=/GiveAway>Have a Pet to Give Away</a></li>
+                    <li><a href=/CreateAccount>Create an Account</a></li>
+                    <li><a href=/Contact>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="catcare">
+            <h3>How to Take Care of a Cat?</h3>
+         <p>
+            Adopting a cat for the first time comes with many new responsibilites. But there's no need to worry as Rob Hunter from 
+            PetSafe has an easy to follow 10 tip guide on how to care for your cat! </p>
+        <a title="Cat care guide" href="https://www.petsafe.com/blog/cats-101-basic-health-care-tips-to-keep-your-cat-healthy/">Follow this link to see Rob's 10 tips!</a><br>
+        <h3>Keeping the Litter Box Clean</h3>
+        <p>
+            One thing many new cat owners struggle with is keeping their cats litter box clean. Which is why we would like to help you by sharomg an easy guide from PetSmart on how to keep it clean.
+        </p>
+        <a title="Litter Box Cleaning" href="https://www.petsmart.com/learning-center/cat-care/how-to-clean-your-cats-litter-box/A0217.html">Click here to learn how to keep your cats litter box clean!</a>
+    </div>
+    </div>
+        <div id="foot">
+            <%- include ('Footer') %>
+        </div>
+    </div>
+</body>
+</html>

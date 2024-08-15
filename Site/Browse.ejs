@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse</title>
+    <link rel="stylesheet" href="Adoption.css">
+    <script src="AdoptionJS.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <%- include('Header') %>
+        </div>
+       <div class="browse">
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href=/Home>Home Page</a></li>
+                    <li><a class="active" href=/Browse >Browse Available Pets</a></li>
+                    <li><a href=/FindAnimal>Find a Dog/Cat</a></li>
+                    <li><a href=/DogCare>Dog Care</a></li>
+                    <li><a href=/CatCare>Cat Care</a></li>
+                    <li><a href=/GiveAway>Have a Pet to Give Away</a></li>
+                    <li><a href=/Contact>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="browse">
+            <div id="pic1">
+                <p><b>Coco</b></p>
+                <img class="browsepics" alt="dog sitting on grass" src="https://hips.hearstapps.com/goodhousekeeping/assets/17/30/pembroke-welsh-corgi.jpg">
+                <p>Type: Dog<br>
+                    Breed: Corgi<br>
+                    Age: 2 y/o<br>
+                    Gender: Male<br>
+                    Gets along with both dogs and cats<br>
+                    Suitable for a family with young children<br>
+                    Contact information:<br>
+                    John Smith<br>
+                    john.smith@gmail.com
+                </p>
+            </div>
+            <div id="pic2">
+                <p><b>Luna</b></p>
+                    <img class="browsepics" alt="cat sitting up" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Britishblue.jpg/640px-Britishblue.jpg">
+                    <p>
+                        Type: Cat<br>
+                        Breed: British Shorthair<br>
+                        Age: 6 y/o<br>
+                        Gender: Female<br>
+                        Only gets along with other cats<br>
+                        Suitable for a family with young children<br>
+                        Contact information:<br>
+                        Maria Williams<br>
+                        maria.williams@gmail.com
+                    </p>
+            </div>
+        </div>
+    </div> 
+        <div id="foot">
+            <%- include ('Footer') %>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

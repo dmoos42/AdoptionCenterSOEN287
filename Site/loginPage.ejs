@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="Adoption.css">
+    <script src="AdoptionJS.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <%- include('Header') %>
+        </div>
+        <div class="forms">
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href=/Home>Home Page</a></li>
+                    <li><a href=/FindAnimal>Find a Dog/Cat</a></li>
+                    <li><a href=/DogCare>Dog Care</a></li>
+                    <li><a href=/CatCare>Cat Care</a></li>
+                    <li><a class="active" href=/GiveAway>Have a Pet to Give Away</a></li>
+                    <li><a href=/CreateAccount>Create an Account</a></li>
+                    <li><a href=/Contact>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="theForm">
+            <form id="loginForm" action="/login" method="post">
+                <fieldset>
+                    <legend>Login</legend>
+                    <p>
+                        <label for="username"><b>Username:</b></label> 
+                        <input type="text" id="username" name="username">
+                    </p>
+                    <p>
+                        <label for="password"><b>Password:</b></label> 
+                        <input type="password" id="password" name="password">
+                    </p>
+                    <button type="submit" value="submit">Submit</button>
+                    <p id="loginError" style="color: red"><b><%= typeof loginError != "undefined" ? loginError : ""%></b></p>
+                </fieldset>
+            </form>
+    </div>
+    </div>
+        <div id="foot">
+            <%- include ('Footer') %>
+        </div>
+    </div>
+
+
+</body>
+</html>
